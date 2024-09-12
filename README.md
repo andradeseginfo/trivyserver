@@ -33,5 +33,6 @@
 <br />python3 trivy-jwt.py
 <br />#observação: precisa colocar o mesmo segredo que foi especificado no TRIVY_SERVER_TOKEN dentro codigo
 
-trivy client --remote http://<ip-do-servidor>:4954 --token <token-jwt-gerado> image <nome-da-imagem>
+trivy client --remote http://ip-do-servidor:4954 --token token-jwt-gerado image nome-da-imagem
+
 
