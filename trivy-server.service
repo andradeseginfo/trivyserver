@@ -1,0 +1,13 @@
+[Unit]
+Description=Trivy Server
+After=network.target
+
+[Service]
+#verificar local de instalacao /usr/bin/trivy ou /usr/local/bin/trivy
+ExecStart=/usr/bin/trivy server
+Restart=always
+RestartSec=10
+User=root
+
+[Install]
+WantedBy=multi-user.target
